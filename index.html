@@ -1374,9 +1374,10 @@ function submitForm() {
 }
 
 // ── RESUME DOWNLOAD ──
-function downloadResume() {
-  alert('📄 In a live deployment, this would download Aarav Sharma\'s PDF resume automatically!');
-}
+const a = document.createElement('a');
+  a.href = 'https://drive.google.com/uc?export=download&id=1kbXRPBh_49V7yMqt32k_IPE16PYJ90kq';
+  a.download = 'Aarav_Sharma_Resume.pdf';
+  a.click();
 
 // ── SMOOTH NAV ACTIVE STATE ──
 window.addEventListener('scroll', () => {
