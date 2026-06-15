@@ -1374,10 +1374,12 @@ function submitForm() {
 }
 
 // ── RESUME DOWNLOAD ──
-const a = document.createElement('a');
+function downloadResume() {
+  const a = document.createElement('a');
   a.href = 'https://drive.google.com/uc?export=download&id=1EnDfpt2bvu8sjVGT6oKJgFIRTqQpPdb3';
   a.download = 'Aarav_Sharma_Resume.pdf';
   a.click();
+}
 
 // ── SMOOTH NAV ACTIVE STATE ──
 window.addEventListener('scroll', () => {
